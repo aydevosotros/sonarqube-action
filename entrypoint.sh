@@ -4,6 +4,9 @@ set -e
 
 REPOSITORY_NAME=$(basename "${GITHUB_REPOSITORY}")
 
+echo "Listing current dir:"
+ls -lh
+
 [[ ! -z ${INPUT_PASSWORD} ]] && SONAR_PASSWORD="${INPUT_PASSWORD}" || SONAR_PASSWORD=""
 
 if [[ ! -f "${GITHUB_WORKSPACE}/sonar-project.properties" ]]; then
