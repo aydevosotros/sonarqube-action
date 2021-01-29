@@ -21,6 +21,6 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
 
-WORKDIR /github/home
+WORKDIR /github/workspace/
 
 ENTRYPOINT ["/entrypoint.sh"]
